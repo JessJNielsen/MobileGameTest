@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://cq3ibs60qpuyd"]
 
+[ext_resource type="Script" uid="uid://b2aj3m56uaoet" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://f7hg06nhfa7h" path="res://card.tscn" id="1_ig7tw"]
 
 [node name="Main" type="Node2D" unique_id=1975852892]
+script = ExtResource("1_0xm2m")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=710170953]
 z_index = -1
@@ -15,48 +17,52 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.8565903, 0.8557696, 0.8774063, 1)
 
-[node name="Card1" parent="." unique_id=1801775636 instance=ExtResource("1_ig7tw")]
-offset_left = 100.0
-offset_top = 300.0
-offset_right = 400.0
-offset_bottom = 600.0
-scale = Vector2(0.8, 0.8)
+[node name="CardGrid" type="GridContainer" parent="." unique_id=1394961311]
+unique_name_in_owner = true
+offset_left = 140.0
+offset_top = 150.0
+offset_right = 940.0
+offset_bottom = 1260.0
+theme_override_constants/h_separation = 40
+theme_override_constants/v_separation = 50
+columns = 3
 
-[node name="Card2" parent="." unique_id=418671425 instance=ExtResource("1_ig7tw")]
-offset_left = 420.0
-offset_top = 300.0
-offset_right = 720.0
-offset_bottom = 600.0
-scale = Vector2(0.8, 0.8)
+[node name="Card1" parent="CardGrid" unique_id=1801775636 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+
+[node name="Card2" parent="CardGrid" unique_id=418671425 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
 match_id = 2
 
-[node name="Card3" parent="." unique_id=182163104 instance=ExtResource("1_ig7tw")]
-offset_left = 740.0
-offset_top = 300.0
-offset_right = 1040.0
-offset_bottom = 600.0
-scale = Vector2(0.8, 0.8)
+[node name="Card3" parent="CardGrid" unique_id=182163104 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
 match_id = 2
 
-[node name="Card4" parent="." unique_id=1865596744 instance=ExtResource("1_ig7tw")]
-offset_left = 100.0
-offset_top = 620.0
-offset_right = 400.0
-offset_bottom = 920.0
-scale = Vector2(0.8, 0.8)
+[node name="Card4" parent="CardGrid" unique_id=1865596744 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
 match_id = 3
 
-[node name="Card5" parent="." unique_id=1111182620 instance=ExtResource("1_ig7tw")]
-offset_left = 420.0
-offset_top = 620.0
-offset_right = 720.0
-offset_bottom = 920.0
-scale = Vector2(0.8, 0.8)
+[node name="Card5" parent="CardGrid" unique_id=1111182620 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
 
-[node name="Card6" parent="." unique_id=803434563 instance=ExtResource("1_ig7tw")]
-offset_left = 740.0
-offset_top = 620.0
-offset_right = 1040.0
-offset_bottom = 920.0
-scale = Vector2(0.8, 0.8)
+[node name="Card6" parent="CardGrid" unique_id=803434563 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
 match_id = 3
+
+[node name="Card7" parent="CardGrid" unique_id=11622227 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+
+[node name="Card8" parent="CardGrid" unique_id=191692837 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+
+[node name="Card9" parent="CardGrid" unique_id=240089858 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+
+[node name="Card10" parent="CardGrid" unique_id=1539217106 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+
+[node name="Card11" parent="CardGrid" unique_id=1232729747 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+
+[node name="Card12" parent="CardGrid" unique_id=1876860590 instance=ExtResource("1_ig7tw")]
+layout_mode = 2

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddq1hlknhihpf"
-path="res://.godot/imported/colourful-shape-icons.jpg-067ff2ca326b4d5f4636cef0c900ed4c.ctex"
+uid="uid://dyvlos31pbt13"
+path="res://.godot/imported/orange_square.jpg-f386e6a99ad0cf24b3aefba12ed3fb75.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/colourful-shape-icons.jpg"
-dest_files=["res://.godot/imported/colourful-shape-icons.jpg-067ff2ca326b4d5f4636cef0c900ed4c.ctex"]
+source_file="res://assets/orange_square.jpg"
+dest_files=["res://.godot/imported/orange_square.jpg-f386e6a99ad0cf24b3aefba12ed3fb75.ctex"]
 
 [params]
 
